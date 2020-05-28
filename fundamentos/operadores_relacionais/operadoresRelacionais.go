@@ -21,11 +21,12 @@ func main() {
 	fmt.Println("Igualdade entre datas =", data1.Equal(data2))
 
 	type Pessoa struct {
-		Nome string
+		Nome      string
+		Sobrenome string
 	}
 
-	p1 := Pessoa{"João"}
-	p2 := Pessoa{"João"}
+	p1 := Pessoa{"João", "Batista"}
+	p2 := Pessoa{"João", "Batista"}
 
 	fmt.Println("Igualdade entre struct =", p1 == p2)
 }
