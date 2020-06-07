@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/big"
 	"reflect"
 )
 
@@ -49,4 +50,12 @@ func main() {
 	fmt.Println("unicode de a:", e)
 	fmt.Println("unicode de b:", f)
 	fmt.Println("unicode de c:", g)
+
+	x := big.NewInt(10)
+	// y := big.NewInt(5)
+
+	fmt.Println(x.Add(big.NewInt(10), big.NewInt(5)))
+	fmt.Println(x.Mul(big.NewInt(10), big.NewInt(5)))
+	fmt.Println(x.Sub(big.NewInt(9), big.NewInt(5)))
+	fmt.Println(x.Div(big.NewInt(6), big.NewInt(2)))
 }
